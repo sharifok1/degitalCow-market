@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-layout</title>
+    <!-- bootstrap-library -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+</head>
+<body class="bg-light">
+    
+
+    <div class="container my-5">
+        <div class="row">
+
+            <div class="col col-md-12 col-lg-12">
+                <h3>Billing address</h3>
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-6 col-lg-6">
+                      <label for="validationCustom01" class="form-label">First name</label>
+                      <input type="text" class="form-control" id="validationCustom01" value="" required>
+                      <div class="valid-feedback">
+                        Correct
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                      <label for="validationCustom02" class="form-label">Last name</label>
+                      <input type="text" class="form-control" id="validationCustom02" value="" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-12 col-lg-12">
+                      <label for="validationCustomUsername" class="form-label">Username</label>
+                      <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                          Please choose a username.
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12 col-lg-12">
+                      <label for="validationCustom03" class="form-label">E-mail <span class="text-muted">(Optional) </span></label>
+                      <input type="email" class="form-control" id="validationCustom03" placeholder="Example: you@mail.com" required>
+                      <div class="invalid-feedback">
+                        Please provide a valid email.
+                      </div>
+                    </div>
+                    <div class="col-12">
+                          <label for="validationCustom04" class="form-label">Address</label>
+                          <input type="text" class="form-control" id="validationCustom04" placeholder="1234 Main St">
+                    </div>
+                    <div class="col-12">
+                          <label for="inputAddress2" class="form-label">Address <span class="text-muted">(Optional) </span> </label>
+                          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                     </div>
+                    <div class="col-md-6">
+                          <label for="inputCountry" class="form-label">Country</label>
+                          <select  class="form-select" id="inputCountry">
+                              <option selected>Choose...</option>
+                              <option selected>America</option>
+                              <option selected>Bangladesh</option>
+                              <option selected>Canada</option>
+                              <option selected>Denmark</option>
+                              <option selected>England</option>
+                              <option selected>France</option>
+                              <option selected>German</option>
+                              </select>
+                        </div>
+                        <div class="col-md-4">
+                          <label for="inputState" class="form-label">State</label>
+                          <select id="inputState" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>Dhaka </option>
+                            <option>Cumila</option>
+                            <option>Chitagong</option>
+                            <option>Rajshahi</option>
+                            <option>Sylet</option>
+                            <option>Maymanshing</option>
+                          </select>
+                        </div>
+                        <div class="col-md-2">
+                          <label for="inputZip" class="form-label">Zip</label>
+                          <input type="text" class="form-control" id="inputZip">
+                        </div>
+                        <div class="col"> <hr></div>
+                        <div class="col-12">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                              My shipping address is same as billing address
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                              Save this information for next time
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col"> <hr></div>
+                        <div class="col- col-md-12 col-lg-12">
+                            <h3>Payment</h3>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="gridCheck">
+                              <label class="form-check-label" for="gridCheck">
+                                Credit card
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="gridCheck">
+                              <label class="form-check-label" for="gridCheck">
+                                Debit card
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="gridCheck">
+                              <label class="form-check-label" for="gridCheck">
+                                PayPal
+                              </label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                            <label for="validationCustom01" class="form-label">Name on Card</label>
+                            <input type="text" class="form-control" id="validationCustom01" aria-describedby="card-name-type" value="" required>
+                            <div id="card-name-type" class="form-text">Full name as displayed on card</div>
+                            <div class="valid-feedback">
+                              Correct
+                            </div>
+                          </div>
+                        <div class="col-md-6 col-lg-6">
+                            <label for="validationCustom01" class="form-label">Card Number</label>
+                            <input type="text" class="form-control" id="validationCustom01" aria-describedby="card-name-type" value="" required >
+                            <div id="card-name-type" class="form-text">Credit card number is required</div>
+                            <div class="valid-feedback">
+                              Correct
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <label for="validationCustom01" class="form-label">Expiration</label>
+                            <input type="date" class="form-control" id="validationCustom01" value="Mark" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <label for="validationCustom01" class="form-label">CVV</label>
+                            <input type="text" class="form-control" id="validationCustom01" value="sd" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                          </div>
+                          <hr>
+
+                          <div class="col-12 col-lg-12">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                              <label class="form-check-label" for="invalidCheck">
+                                Agree to terms and conditions
+                              </label>
+                              <div class="invalid-feedback">
+                                You must agree before submitting.
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                        
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" type="submit">Continue to Cheackout</button>
+                                
+                              </div>
+                  </form>
+                  
+                </div>
+                
+                </div>
+               
+    </div>
+
+    <!--=========================== second form
+    ================================================ -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    
+    
+</body>
+
+</html>
